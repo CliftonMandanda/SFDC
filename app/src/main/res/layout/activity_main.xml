@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/nav_view"-->
+<!--        app:headerLayout="@layout/header"-->
+<!--        app:menu="@menu/menu_main"-->
+<!--        android:layout_gravity="start"/>-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/scrollView2">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#FFFFFF"-->
+<!--            tools:layout_conversion_absoluteHeight="0dp"-->
+<!--            tools:layout_editor_absoluteY="0dp"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_conversion_absoluteWidth="411dp" />-->
+
+<!--    </ScrollView>-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="360dp"
+        android:src="@drawable/smdc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/homeLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/aclonica"
+        android:shadowColor="@color/ic_launcher_background"
+        android:shadowDx="0"
+        android:shadowDy="15"
+        android:shadowRadius="15"
+        android:text="Farming Disease "
+        android:textAlignment="center"
+        android:textColor="#385139"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLogo1"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/homeLogo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/abril_fatface"
+        android:shadowColor="#93C595"
+        android:shadowDx="0"
+        android:shadowDy="10"
+        android:shadowRadius="15"
+        android:text="SMART"
+        android:textColor="#47974A"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/homeLogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/aclonica"
+        android:shadowColor="@color/ic_launcher_background"
+        android:shadowDx="0"
+        android:shadowDy="10"
+        android:shadowRadius="15"
+        android:text="Control"
+        android:textColor="#0D5A53"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLogo2"
+        app:layout_constraintVertical_bias="0.067" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
