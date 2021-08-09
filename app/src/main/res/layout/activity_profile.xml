@@ -10,16 +10,84 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="177dp"
-        android:layout_marginLeft="177dp"
-        android:layout_marginTop="309dp"
-        android:layout_marginEnd="177dp"
-        android:layout_marginRight="177dp"
-        android:layout_marginBottom="403dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/sfsd_profile"
         android:textSize="30sp"
-        android:text="welcome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profileName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        android:hint="full_name"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/profile_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profileNameInput"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profileFarmName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Farm Name"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profileFarmNameInput"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
