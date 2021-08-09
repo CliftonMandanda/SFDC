@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:scrollbarStyle="insideInset"
-    android:scrollbars="horizontal|vertical"
-    app:flow_firstHorizontalStyle="spread_inside"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    android:keepScreenOn="true"
+    android:scrollbars="vertical"
+    app:layout_scrollFlags="scroll"
     tools:context=".Profile">
 
     <TextView
@@ -19,15 +20,15 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="122dp"
-        android:layout_height="125dp"
+        android:layout_width="98dp"
+        android:layout_height="95dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -162,24 +163,6 @@
 
 
     </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/ctreateProfileButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginRight="168dp"
-        android:layout_marginBottom="77dp"
-        android:text="Create"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileDistrict"
-        app:layout_constraintVertical_bias="0.465" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
