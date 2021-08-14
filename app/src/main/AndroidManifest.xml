@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SFDC">
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".Scans"></activity>
+        <activity android:name=".ScheduleViewModel" />
+        <activity android:name=".ScansViewModel" />
+        <activity android:name=".HomeViewModel" />
+        <activity android:name=".NavHeaderLanding" />
+        <activity android:name=".HeaderLanding" />
+        <activity android:name=".LandingContent" />
+        <activity android:name=".LandingBar" />
+        <activity android:name=".Landing" />
+        <activity android:name=".Profile" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />

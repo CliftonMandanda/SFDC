@@ -15,6 +15,8 @@
     <string name="full_name">Full Name</string>
     <string name="sfsd_profile">SFSD Profile</string>
     <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
