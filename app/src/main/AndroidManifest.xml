@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.sfdc">
 
     <application
@@ -9,10 +10,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SFDC">
-        <activity android:name=".Scans"></activity>
-        <activity android:name=".ScheduleViewModel" />
-        <activity android:name=".ScansViewModel" />
-        <activity android:name=".HomeViewModel" />
+        <activity android:name=".Scans"
+            tools:ignore="Instantiatable"></activity>
+        <activity android:name=".ScheduleViewModel"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ScansViewModel"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".HomeViewModel"
+            tools:ignore="Instantiatable" />
         <activity android:name=".NavHeaderLanding" />
         <activity android:name=".HeaderLanding" />
         <activity android:name=".LandingContent" />
@@ -21,7 +26,8 @@
         <activity android:name=".Profile" />
         <activity
             android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="@string/title_activity_login"
+            tools:ignore="MissingClass" />
         <activity android:name=".Dashboard" />
         <activity
             android:name=".MainActivity"

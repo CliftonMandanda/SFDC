@@ -23,6 +23,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
         android:paddingTop="8dp"
         android:text="Smart Farming Disease Control"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />

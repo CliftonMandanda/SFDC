@@ -15,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 
 import android.view.Menu;
@@ -25,9 +26,21 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.opencv.android.OpenCVLoader;
+
 import java.lang.annotation.Annotation;
 
 public class MainActivity extends AppCompatActivity implements View.OnCreateContextMenuListener {
+
+    private static String TAG = "MainActivity";
+
+    static
+    {
+        if (OpenCVLoader.initDebug()) Log.d(TAG, "OpenCV is Configured Successfully");
+        else {
+            Log.d(TAG,"OpenCV not Working");
+        }
+    }
 
     //Variables
     DrawerLayout drawerLayout;

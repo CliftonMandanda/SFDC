@@ -16,6 +16,7 @@
         android:layout_marginEnd="161dp"
         android:layout_marginRight="161dp"
         android:layout_marginBottom="430dp"
+        android:fontFamily="@font/abril_fatface"
         android:gravity="center_horizontal"
         android:text="Welcome to Smart Farming Disease Control "
         android:textAlignment="center"
