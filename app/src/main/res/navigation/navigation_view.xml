@@ -12,14 +12,19 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_scans"
-        android:name="com.example.sfdc.Scans"
-        android:label="Scans"
-        tools:layout="@layout/fragment_scans" />
-
-    <fragment
         android:id="@+id/nav_schedule"
         android:name="com.example.sfdc.Schedule"
         android:label="Schedules"
         tools:layout="@layout/fragment_schedule" />
+    <activity
+        android:id="@+id/nav_scanCamera"
+        android:name="com.example.sfdc.ScanCamera"
+        android:label="Scans"
+        tools:layout="@layout/activity_scan_camera"/>
+    <activity
+        android:id="@+id/nav_showProfile"
+        android:name="com.example.sfdc.ShowProfile"
+        android:label="Show prof"
+        tools:layout="@layout/activity_show_profile"/>
+
 </navigation>

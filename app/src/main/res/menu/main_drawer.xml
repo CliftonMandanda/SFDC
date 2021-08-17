@@ -9,12 +9,16 @@
             android:icon="@drawable/home_icon"
             android:title="Home" />
         <item
-            android:id="@+id/nav_scans"
-            android:icon="@drawable/camera_scans_24"
-            android:title="Scans" />
-        <item
             android:id="@+id/nav_schedule"
             android:icon="@drawable/schedule"
             android:title="Schedule" />
+        <item
+            android:id="@+id/nav_showProfile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_scanCamera"
+            android:icon="@drawable/camera_scans_24"
+            android:title="Scans" />
     </group>
 </menu>
