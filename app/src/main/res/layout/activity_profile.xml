@@ -9,10 +9,9 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/back6"
         android:padding="40dp"
         tools:context=".Profile">
-
-
 
 
         <TextView
@@ -74,8 +73,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="275dp"
             android:layout_marginEnd="25dp"
+            android:layout_marginRight="32dp"
             android:hint="Phone Number"
             app:counterEnabled="true"
             app:counterMaxLength="10"
@@ -83,9 +84,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:startIconDrawable="@drawable/phone_number"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="32dp">
+            app:startIconDrawable="@drawable/phone_number">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/profilePhoneNumberInput"

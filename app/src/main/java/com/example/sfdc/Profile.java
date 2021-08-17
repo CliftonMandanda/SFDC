@@ -54,41 +54,42 @@ public class Profile extends AppCompatActivity {
         farmingType = findViewById(R.id.profileFarmingTypeInput);
         district = findViewById(R.id.profileDistrictNameInput);
 
-        if (fullName.getText().toString().isEmpty() && phoneNumber.getText().toString().isEmpty() && farmName.getText().toString().isEmpty() && farmingType.getText().toString().isEmpty() && district.getText().toString().isEmpty()) {
-            fullName.setError("This field is required");
-            phoneNumber.setError("This field is required");
-            farmName.setError("Email is required");
-            farmingType.setError("Password is required");
-            district.setError("Password is required");
+        createProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        } else {
-            createProfile.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+                //storing user data to local storage
+                name = String.valueOf(fullName.getText());
+                SharedPreferences shared = getSharedPreferences(SHAREDPREFERENCIES, MODE_PRIVATE);
+                SharedPreferences.Editor editor = shared.edit();
+                editor.putString(FULLNAME, name);
+                editor.putString(PHONENUMBER, phoneNumber.getText().toString());
+                editor.putString(FARMNAME, farmName.getText().toString());
+                editor.putString(FARMINGTYPE, farmingType.getText().toString());
+                editor.putString(DISTRICT, district.getText().toString());
+                editor.apply();
 
-                    //storing user data to local storage
-                    name = String.valueOf(fullName.getText());
-                    SharedPreferences shared = getSharedPreferences(SHAREDPREFERENCIES, MODE_PRIVATE);
-                    SharedPreferences.Editor editor = shared.edit();
-                    editor.putString(FULLNAME, name);
-                    editor.putString(PHONENUMBER, phoneNumber.getText().toString());
-                    editor.putString(FARMNAME, farmName.getText().toString());
-                    editor.putString(FARMINGTYPE, farmingType.getText().toString());
-                    editor.putString(DISTRICT, district.getText().toString());
-                    editor.apply();
+                //Showing a toast message after successful profile creation
 
-                    //Showing a toast message after successful profile creation
+                if (fullName.getText().toString().isEmpty() && phoneNumber.getText().toString().isEmpty() && farmName.getText().toString().isEmpty() && farmingType.getText().toString().isEmpty() && district.getText().toString().isEmpty()) {
+                    fullName.setError("This field is required");
+                    phoneNumber.setError("This field is required");
+                    farmName.setError("Email is required");
+                    farmingType.setError("Password is required");
+                    district.setError("Password is required");
 
-                    Toast.makeText(getApplicationContext(), "Profile Created", Toast.LENGTH_SHORT).show();
+                } else {
 
                     Intent intent = new Intent(getApplicationContext(), Landing.class);
                     startActivity(intent);
                     finish();
 
+                    Toast.makeText(getApplicationContext(), "Profile Created", Toast.LENGTH_SHORT).show();
                 }
-            });
 
-        }
+            }
+        });
+
 
     }
 }
