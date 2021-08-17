@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceView;
+import android.widget.Toolbar;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -16,6 +17,8 @@ import org.opencv.core.Mat;
 import org.opencv.imgproc.Imgproc;
 
 public class ScanCamera extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
+
+
     private static String TAG = "ScanCamera";
     JavaCameraView javaCameraView;
     Mat mRGBA, mRGBAT;
@@ -60,7 +63,11 @@ public class ScanCamera extends AppCompatActivity implements CameraBridgeViewBas
         javaCameraView = (JavaCameraView) findViewById(R.id.javaCamera);
         javaCameraView.setVisibility(SurfaceView.VISIBLE);
         javaCameraView.setCvCameraViewListener(ScanCamera.this);
+
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+
 
     @Override
     public void onCameraViewStarted(int width, int height)

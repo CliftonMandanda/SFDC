@@ -48,7 +48,7 @@ public class Landing extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_scanCamera , R.id.nav_schedule,R.id.nav_showProfile)
+                R.id.nav_home, R.id.nav_scanCamera , R.id.nav_schedules,R.id.nav_showProfile)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.content_landing_fragment);

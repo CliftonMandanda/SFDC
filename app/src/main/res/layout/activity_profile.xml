@@ -9,7 +9,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/back6"
+        android:background="@drawable/backg12"
         android:padding="40dp"
         tools:context=".Profile">
 

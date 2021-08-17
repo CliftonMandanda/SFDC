@@ -10,12 +10,6 @@
         android:name="com.example.sfdc.Home"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_schedule"
-        android:name="com.example.sfdc.Schedule"
-        android:label="Schedules"
-        tools:layout="@layout/fragment_schedule" />
     <activity
         android:id="@+id/nav_scanCamera"
         android:name="com.example.sfdc.ScanCamera"
@@ -24,7 +18,12 @@
     <activity
         android:id="@+id/nav_showProfile"
         android:name="com.example.sfdc.ShowProfile"
-        android:label="Show prof"
+        android:label="Profile"
         tools:layout="@layout/activity_show_profile"/>
+    <activity
+        android:id="@+id/nav_schedules"
+        android:name="com.example.sfdc.Schedules"
+        android:label="Schedule"
+        tools:layout="@layout/activity_schedules"/>
 
 </navigation>

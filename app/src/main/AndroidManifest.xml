@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.sfdc">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera"/>
-    <uses-feature android:name="android.hardware.camera.autoFocus"/>
-    <uses-feature android:name="android.hardware.camera.front"/>
-    <uses-feature android:name="android.hardware.camera.front.autoFocus"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autoFocus" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.front.autoFocus" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SFDC">
-        <activity android:name=".ScanCamera"></activity>
+        <activity android:name=".Schedules"></activity>
+        <activity android:name=".ScanCamera" />
         <activity android:name=".ShowProfile" />
         <activity
             android:name=".Scans"
@@ -37,8 +38,6 @@
         <activity android:name=".LandingBar" />
         <activity android:name=".Landing" />
         <activity android:name=".Profile" />
-
-            tools:ignore="MissingClass" />
         <activity android:name=".Dashboard" />
         <activity
             android:name=".MainActivity"

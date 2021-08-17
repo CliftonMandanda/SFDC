@@ -7,18 +7,30 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home_icon"
-            android:title="Home" />
+            android:title="Home"
+            android:textStyle="bold"
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@color/white"/>
         <item
-            android:id="@+id/nav_schedule"
+            android:id="@+id/nav_schedules"
             android:icon="@drawable/schedule"
-            android:title="Schedule" />
+            android:title="Schedule"
+            android:textStyle="bold"
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@color/white"/>
         <item
             android:id="@+id/nav_showProfile"
             android:icon="@drawable/profile_icon"
-            android:title="Profile" />
+            android:title="Profile"
+            android:textStyle="bold"
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@color/white"/>
         <item
             android:id="@+id/nav_scanCamera"
             android:icon="@drawable/camera_scans_24"
-            android:title="Scans" />
+            android:title="Scans"
+            android:textStyle="bold"
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@color/white"/>
     </group>
 </menu>
