@@ -9,14 +9,4 @@ import android.os.Bundle;
 
 public class ScheduleViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
-
-    public ScheduleViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is Schedule fragment");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
-    }
 }

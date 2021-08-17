@@ -115,7 +115,7 @@ public class ScanCamera extends AppCompatActivity implements CameraBridgeViewBas
         }
         else {
             Log.d(TAG,"OpenCV not Working");
-            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION, this, baseLoaderCallback);
+            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_2_0, this, baseLoaderCallback);
         }
     }
 }

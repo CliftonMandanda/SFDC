@@ -11,6 +11,10 @@
 
     <org.opencv.android.JavaCameraView
         android:id="@+id/javaCamera"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:visibility="visible"
+        tools:visibility="visible" />
 </RelativeLayout>
