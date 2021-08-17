@@ -36,7 +36,7 @@ public class ShowProfile extends AppCompatActivity {
         phoneNumber.setText(text2);
 
         text3 = shared.getString(FARMNAME,"");
-        farmType.setText(text3);
+        farmName.setText(text3);
 
         text4 = shared.getString(FARMINGTYPE,"");
         farmType.setText(text4);
