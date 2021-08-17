@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "787715335279",
+    "project_id": "sfdc-fe729",
+    "storage_bucket": "sfdc-fe729.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787715335279:android:e5a3b8604607909299999a",
+        "android_client_info": {
+          "package_name": "com.example.sfdc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787715335279-lb3p79r7d35eevnjmja9ja0qavc8180p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGJlwt4_qv3D4I0_gJJKNGNRV0zo5Uc2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787715335279-lb3p79r7d35eevnjmja9ja0qavc8180p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
